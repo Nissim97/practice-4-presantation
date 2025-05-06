@@ -6,9 +6,10 @@
         private int age;
         private bool isMale;
 
-        public Child(string name, bool isMale)
+        public Child(string name, int age, bool isMale)
         {
             this.name = name;
+            this.age = age;
             this.isMale = isMale;
         }
 
@@ -19,6 +20,7 @@
             this.age = 2025 - year;
 
             return this.age;
+
         }
 
         protected void PrintInfo()
